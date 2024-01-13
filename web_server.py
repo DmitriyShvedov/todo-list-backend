@@ -5,12 +5,6 @@ FOLDER = '/Users/dm.shvedov/Desktop'
 
 app = Flask(__name__)
 
-
-@app.route("/")
-def hello_world():
-    return "<p>Hello, World!</p>"
-
-
 @app.route("/api/entries/")
 def get_entries():
     my_list = []
